@@ -6033,119 +6033,119 @@ namespace ManagedCuda
             props.HandleTypeWin32KMTHandleSupported = handleTypeWin32KMTHandleSupported > 0;
 
             int maxBlocksPerMultiProcessor = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxBlocksPerMultiProcessor, CUDeviceAttribute.MaxBlocksPerMultiProcessor, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxBlocksPerMultiProcessor, CUDeviceAttribute.MaxBlocksPerMultiProcessor, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.MaxBlocksPerMultiProcessor = maxBlocksPerMultiProcessor;
 
             int genericCompressionSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref genericCompressionSupported, CUDeviceAttribute.GenericCompressionSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref genericCompressionSupported, CUDeviceAttribute.GenericCompressionSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.GenericCompressionSupported = genericCompressionSupported > 0;
 
             int maxPersistingL2CacheSize = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxPersistingL2CacheSize, CUDeviceAttribute.MaxPersistingL2CacheSize, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxPersistingL2CacheSize, CUDeviceAttribute.MaxPersistingL2CacheSize, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.MaxPersistingL2CacheSize = maxPersistingL2CacheSize;
 
             int maxAccessPolicyWindowSize = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxAccessPolicyWindowSize, CUDeviceAttribute.MaxAccessPolicyWindowSize, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref maxAccessPolicyWindowSize, CUDeviceAttribute.MaxAccessPolicyWindowSize, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.MaxAccessPolicyWindowSize = maxAccessPolicyWindowSize;
 
             int gPUDirectRDMAWithCudaVMMSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gPUDirectRDMAWithCudaVMMSupported, CUDeviceAttribute.GPUDirectRDMAWithCudaVMMSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gPUDirectRDMAWithCudaVMMSupported, CUDeviceAttribute.GPUDirectRDMAWithCudaVMMSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.GPUDirectRDMAWithCudaVMMSupported = gPUDirectRDMAWithCudaVMMSupported > 0;
 
             int reservedSharedMemoryPerBlock = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref reservedSharedMemoryPerBlock, CUDeviceAttribute.ReservedSharedMemoryPerBlock, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref reservedSharedMemoryPerBlock, CUDeviceAttribute.ReservedSharedMemoryPerBlock, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.ReservedSharedMemoryPerBlock = reservedSharedMemoryPerBlock;
 
             int sparseCudaArraySupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref sparseCudaArraySupported, CUDeviceAttribute.SparseCudaArraySupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref sparseCudaArraySupported, CUDeviceAttribute.SparseCudaArraySupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.SparseCudaArraySupported = sparseCudaArraySupported > 0;
 
             int readOnlyHostRegisterSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref readOnlyHostRegisterSupported, CUDeviceAttribute.ReadOnlyHostRegisterSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref readOnlyHostRegisterSupported, CUDeviceAttribute.ReadOnlyHostRegisterSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.ReadOnlyHostRegisterSupported = readOnlyHostRegisterSupported > 0;
 
 
             int gpuDirectRDMASupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMASupported, CUDeviceAttribute.GpuDirectRDMASupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMASupported, CUDeviceAttribute.GpuDirectRDMASupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.GpuDirectRDMASupported = gpuDirectRDMASupported > 0;
 
             int gpuDirectRDMAFlushWritesOptions = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMAFlushWritesOptions, CUDeviceAttribute.GpuDirectRDMAFlushWritesOptions, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMAFlushWritesOptions, CUDeviceAttribute.GpuDirectRDMAFlushWritesOptions, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.GpuDirectRDMAFlushWritesOptions = (CUflushGPUDirectRDMAWritesOptions)gpuDirectRDMAFlushWritesOptions;
 
             int gpuDirectRDMAWritesOrdering = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMAWritesOrdering, CUDeviceAttribute.GpuDirectRDMAWritesOrdering, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref gpuDirectRDMAWritesOrdering, CUDeviceAttribute.GpuDirectRDMAWritesOrdering, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.GpuDirectRDMAWritesOrdering = (CUGPUDirectRDMAWritesOrdering)gpuDirectRDMAWritesOrdering;
 
             int mempoolSupportedHandleTypes = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref mempoolSupportedHandleTypes, CUDeviceAttribute.MempoolSupportedHandleTypes, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref mempoolSupportedHandleTypes, CUDeviceAttribute.MempoolSupportedHandleTypes, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.MempoolSupportedHandleTypes = (CUmemAllocationHandleType)mempoolSupportedHandleTypes;
 
 
             int clusterLaunch = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref clusterLaunch, CUDeviceAttribute.ClusterLaunch, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref clusterLaunch, CUDeviceAttribute.ClusterLaunch, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.ClusterLaunch = clusterLaunch != 0;
 
             int deferredMappingCudaArraySupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref deferredMappingCudaArraySupported, CUDeviceAttribute.DeferredMappingCudaArraySupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref deferredMappingCudaArraySupported, CUDeviceAttribute.DeferredMappingCudaArraySupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.DeferredMappingCudaArraySupported = deferredMappingCudaArraySupported != 0;
 
             int dmaBufSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref dmaBufSupported, CUDeviceAttribute.DmaBufSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref dmaBufSupported, CUDeviceAttribute.DmaBufSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.DmaBufSupported = dmaBufSupported != 0;
 
             int ipcEventSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref ipcEventSupported, CUDeviceAttribute.IPCEventSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref ipcEventSupported, CUDeviceAttribute.IPCEventSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.IPCEventSupported = ipcEventSupported != 0;
 
             int memSyncDomainCount = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref memSyncDomainCount, CUDeviceAttribute.MemSyncDomainCount, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref memSyncDomainCount, CUDeviceAttribute.MemSyncDomainCount, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.MemSyncDomainCount = memSyncDomainCount;
 
             int tensorMapAccessSupported = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref tensorMapAccessSupported, CUDeviceAttribute.TensorMapAccessSupported, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref tensorMapAccessSupported, CUDeviceAttribute.TensorMapAccessSupported, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.TensorMapAccessSupported = tensorMapAccessSupported != 0;
 
             int unifiedFunctionPointers = 0;
-            res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref unifiedFunctionPointers, CUDeviceAttribute.UnifiedFunctionPointers, device);
-            Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
-            if (res != CUResult.Success) throw new CudaException(res);
+            //res = DriverAPINativeMethods.DeviceManagement.cuDeviceGetAttribute(ref unifiedFunctionPointers, CUDeviceAttribute.UnifiedFunctionPointers, device);
+            //Debug.WriteLine(String.Format("{0:G}, {1}: {2}", DateTime.Now, "cuDeviceGetAttribute", res));
+            //if (res != CUResult.Success) throw new CudaException(res);
             props.UnifiedFunctionPointers = unifiedFunctionPointers != 0;
 
             return props;
